@@ -1,11 +1,9 @@
-# Create your models here.
-# from django.conf import settings
+
 from django.db import models
-# from django.utils import timezone
-# from django.urls import reverse
+
 
 class Alcohol(models.Model):
-    id = models.BigAutoField()
+    id = models.BigAutoField(primary_key=True, auto_created=True)
     product_id = models.IntegerField()
     product_name = models.TextField()
     product_price = models.IntegerField()
@@ -16,9 +14,3 @@ class Alcohol(models.Model):
     def __str__(self):
         return f'{self.id}, {self.product_id}, {self.product_name}, {self.product_price}, {self.product_country}, {self.product_size}, {self.product_ABV}'
 
-
-
-
-from django.db import models
-
-# Create your models here.

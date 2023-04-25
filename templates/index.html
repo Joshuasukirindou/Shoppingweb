@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <title>Welcome to Ms. Lapland's Winery</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .items img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <div class="head-in">
+        <ul class="options">
+            <li class="sub"><a href="http://127.0.0.1:8000">My Orders</a> </li>
+            <li class="sub"><a href="http://127.0.0.1:8000">My Account</a> </li>
+            <li class="sub"><a href="http://127.0.0.1:8000">My Cart</a> </li>
+        </ul>
+        <div class="register"><a href="http://127.0.0.1:8000">Register</a></div>
+        <div class="sign"><a href="http://127.0.0.1:8000">Log in</a></div>
+    </div>
+
+</div>
+
+<div class="search">
+
+    <ul class="items">
+        <li class="item">
+            <a href="http://127.0.0.1:8000">
+                <img src="{% static 'images/index1.jpg' %}" alt="Index Image">
+                <p>Always enjoy your time</p>
+            </a>
+        </li>
+        <li class="item">
+            <a href="index.html">
+                <img src="{% static 'images/index2.jpg' %}" alt="Index Image">
+                <p>Always drink with your friend</p>
+            </a>
+        </li>
+        <li class="item">
+            <a href="index.html">
+                <img src="{% static 'images/index3.jpg' %}" alt="Index Image">
+                <p>Always love your loves</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+</body>
